@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Times New Roman", sans-serif;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            min-width: 768px;
+            margin: auto;
+        }
+        
+        .row::after,
+        .row::before {
+            content: "";
+            display: table;
+        }
+        
+        .row::after {
+            clear: both;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+/*_____header_____*/
+        header {
+            text-align: center;
+            background-color: #ff6825;
+            min-height: 150px;
+            padding: 8% 0;
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+        }
+        
+        header h2 {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+            text-decoration: none;
+            
+        }
+        
+        header p {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+/*_____SECTION .HALF_____*/
+        
+        .half {
+            width: 50%;
+            float: left;
+            padding: 1.5%;
+        }
+        
+        h2 {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            font-family: Cambria, serif;
+        }
+        
+        .half p {
+            margin: 7px  0;
+            text-align: justify;
+        }
+        
+        .right-block {
+            float: right;
+            padding: 15px;
+            margin-left: 10px;
+        }
+        
+        .video {
+            background-color: #e02f2f;
+            width: 55px;
+            height: 40px;
+            padding: 10px 24px;
+            border-radius: 9px/11px;
+            cursor:pointer;
+        } 
+        
+        .play {
+            border: 10px solid transparent;
+            border-left-color: #fff;
+        }
+        
+/*_____section .course_____*/
+        .course {
+            width: 20%;
+            float: left;
+            padding:1.5%;
+            margin-bottom: 20px;
+            min-height: 192px;
+        }
+        
+        .price {
+            text-align: right;
+            font-weight: 700;
+        }
+        
+        .price::before {
+            content:"$";
+        }
+        
+        
+        
+        
+        
+    
+    </style>
+</head>
+<body>
+   <header>
+       <h1>Simple page</h1>
+       <h2>with CSS Box Model</h2>
+       <p>for students</p>
+   </header>
+   <section>
+       <div class="container row">
+           <div class="half">
+               <h2>About Us</h2>
+               <div class="right-block">
+                   <div class="video" title="Play Video About Us">
+                      <div class="play"></div>   
+                   </div>
+               </div>
+           
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quod corporis quaerat dignissimos nisi laboriosam vel laudantium voluptates ipsa eius!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio placeat doloremque fuga aspernatur, tempore iure nam vitae atque. Voluptas, ut!</p>
+           </div>
+           <div class="half">
+               <h2>Our mission</h2> 
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quod corporis quaerat dignissimos nisi laboriosam vel laudantium voluptates ipsa eius!</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio placeat doloremque fuga aspernatur, tempore iure nam vitae atque. Voluptas, ut!</p>
+           </div>
+       </div>
+   </section>
+   <section>
+       <h2 class="text-center">Popular Courses</h2>
+       <div class="container row">
+           <div class="course">
+               <div class="top">
+                   <div class="promo">Top Sales</div>
+                   <h3>The Web Developer</h3>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit commodi facere optio illo quibusdam aperiam.</p>
+               <div class="price">19.99</div>
+           </div>
+              <div class="course">
+               <div class="top">
+                   <div class="promo">Top Sales</div>
+                   <h3>The Web Developer</h3>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit commodi facere optio illo quibusdam aperiam.</p>
+               <div class="price">$19.99</div>
+           </div>
+              <div class="course">
+               <div class="top">
+                   <div class="promo">Top Sales</div>
+                   <h3>The Web Developer</h3>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit commodi facere optio illo quibusdam aperiam.</p>
+               <div class="price">$19.99</div>
+           </div>
+              <div class="course">
+               <div class="top">
+                   <div class="promo">Top Sales</div>
+                   <h3>The Web Developer</h3>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit commodi facere optio illo quibusdam aperiam.</p>
+               <div class="price">$19.99</div>
+           </div>
+              <div class="course">
+               <div class="top">
+                   <div class="promo">Top Sales</div>
+                   <h3>The Web Developer</h3>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit commodi facere optio illo quibusdam aperiam.</p>
+               <div class="price">$19.99</div>
+           </div>
+       </div>
+   </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
